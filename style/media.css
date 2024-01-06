@@ -1,0 +1,101 @@
+
+    
+    @media only screen and (max-width:1200px){ 
+      .form-data{
+        width: 90vw;
+        margin-right: 0px;
+        height: auto;
+        line-height: normal;
+      }
+    }
+  
+  @media only screen and (max-width:992px){
+    .header-nav{
+      display: none;
+    }
+    
+    .menuBtn{
+      display: flex;
+      z-index: 101;
+    }
+    .header-nav h2{
+      display: none;
+    }
+    .header-nav hr{
+      display: none;
+    }
+    .header-nav.popUp{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 100;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      
+      animation-duration: 0.55s;  /* Время работы анимации */
+      animation-fill-mode: both;  /* Поведение анимации */
+      animation-name: fadeInDown;/* Имя анимации */
+    } 
+    nav ul{
+      flex-direction: column;
+    }
+    
+    @keyframes fadeInDown { /* Сама анимация */
+      0% {                /* Старт анимации */
+          opacity: 0;
+          transform: translate3d(100%, 0px, 0px);
+      }
+      100% {              /* в финале анимации - финал это заданная 0.55s */
+          opacity: 1;
+          transform: none;
+      }
+    }
+    .container{
+      margin-top: -100px;
+    }
+  }
+  @media only screen and (max-width:768px){ /*-------ГОТОВО-------*/
+    main .main-block_about .block_about-right{
+      margin-top: 0px;
+    }
+    .menuBtn{
+      margin-left: 80%;
+    }
+    .header-content .header-content_text h2{
+      font-size: 40px;
+    }
+    .header-content .header-content_text p{
+      font-size: 20px;
+    }
+    .header-content .header-content_text button{
+      height: 50px;
+    }
+    main .main-block {
+      justify-content: center;
+      margin-right: 0px;
+    }
+    main .main-block_about button{
+      height: 50px;
+    }
+    .block-services .block-services_display{
+      margin-top: 0px;
+    }
+    footer nav{
+      margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width:570px){
+  
+  }
+  @media only screen and (max-width:400px){
+   
+  }
+  @media only screen and (max-width:320px){
+   
+  }
+  
