@@ -107,6 +107,11 @@ if (!empty($_POST['message'])) {
   itc_log('Не заполнено поле message.');
 }
 // валидация phone
+if (empty($_POST['phone'])) {
+  $data['result'] = 'error';
+  $data['errors']['phone'] = 'Заполните это поле.';
+  itc_log('Phone пустой.');
+}
 if (!empty($_POST['phone'])) {
   $data['form']['phone'] = preg_replace('/D/', '', $_POST['phone']);
   if (!preg_match('/^(8|7)(d{10})$/',$_POST['phone'])) {
@@ -114,11 +119,6 @@ if (!empty($_POST['phone'])) {
     $data['errors']['phone'] = 'Поле содержит не корректный номер.';
     itc_log('Phone не корректный.');
   }
-}
-if (empty($_POST['phone'])) {
-  $data['result'] = 'error';
-  $data['errors']['phone'] = 'Заполните это поле.';
-  itc_log('Phone пустой.');
 }
 
 use PHPMailer\PHPMailer\PHPMailer;

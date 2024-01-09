@@ -94,6 +94,7 @@ html {
 
 header {
   background-image: url(/img/fon.png);
+  background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -222,7 +223,7 @@ main .main-block_up a {
 main .main-block_about {
   margin-top: 100px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -233,7 +234,7 @@ main .main-block_about .block_about-left {
 main .main-block_about .main-block_about-text h3 {
   color: #454545;
   font-size: 25px;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 main .main-block_about .main-block_about-text h2 {
   font-family: 600;
@@ -246,8 +247,17 @@ main .main-block_about .main-block_about-text p {
   margin-top: 20px;
   line-height: 26px;
 }
+main .main-block_about .main-block_about-text p a {
+  color: #3957FF;
+  font-weight: 400;
+  transition: 1s;
+}
+main .main-block_about .main-block_about-text p a:hover {
+  color: #454545;
+  text-decoration: none;
+}
 main .main-block_about .main-block_about-icon {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   margin-left: -30px;
@@ -291,7 +301,7 @@ main .main-block_about .block_about-right {
   margin-top: 100px;
 }
 .block-work .block-work_header {
-  background-color: rgba(244, 246, 248, 0.5);
+  background-color: rgba(244, 246, 248, 0.7);
   position: absolute;
   z-index: 100;
   width: 99.5%;
@@ -301,7 +311,7 @@ main .main-block_about .block_about-right {
   color: #454545;
   margin-left: 19%;
   margin-top: 15px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .swiper {
@@ -326,11 +336,71 @@ main .main-block_about .block_about-right {
      object-fit: cover;
 }
 
+.block-testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #F4F6F8;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+.block-testimonials .block-testimonials_left-text {
+  margin-left: 50px;
+}
+.block-testimonials .block-testimonials_left-text h3 {
+  color: #454545;
+  font-size: 25px;
+  font-weight: 500;
+}
+.block-testimonials .block-testimonials_left-text h2 {
+  color: black;
+  font-weight: 400;
+  font-size: 45px;
+  margin-top: 15px;
+}
+.block-testimonials .block-testimonials_left-text button {
+  margin-top: 50px;
+  background-color: #3957FF;
+  border: none;
+  height: 64px;
+  width: 189px;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 10px 30px rgba(28, 54, 147, 0.3);
+  transition: 0.5s;
+}
+.block-testimonials .block-testimonials_left-text button:hover {
+  background-color: rgb(28, 54, 147);
+}
+.block-testimonials .block-testimonials_right-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.block-testimonials .block-testimonials_right-text img {
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgba(122, 122, 122, 0.7);
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.block-testimonials .block-testimonials_right-text .right-text_block-top {
+  margin-bottom: 20px;
+}
+
 .block-connect {
   background-image: url(/img/fon2.png);
   background-size: cover;
+  background-position: 40%;
   background-repeat: no-repeat;
-  margin-top: 100px;
   margin-left: -5px;
   margin-right: -5px;
   height: 100vh;
@@ -394,6 +464,9 @@ main .main-block_about .block_about-right {
 .block-services .block-services_text {
   margin: 15%;
 }
+.block-services a {
+  text-decoration: none;
+}
 .block-services .block-services_display {
   display: flex;
   flex-direction: row;
@@ -401,12 +474,19 @@ main .main-block_about .block_about-right {
   align-items: center;
   justify-content: center;
   margin-top: -100px;
+  cursor: pointer;
 }
 .block-services .block-services_display .installations {
   background-color: white;
   color: #454545;
   border-radius: 10px;
   transition: 1s;
+  width: 300px;
+  height: 550px;
+  margin: 10px;
+}
+.block-services .block-services_display .installations hr {
+  border: 1px solid #3957FF;
 }
 .block-services .block-services_display .installations:hover {
   background-color: #3957FF;
@@ -420,14 +500,13 @@ main .main-block_about .block_about-right {
      object-fit: cover;
 }
 .block-services .block-services_display .installations .text-installations {
+  text-align: center;
   padding: 20px;
-}
-.block-services .block-services_display .installations .text-installations h3 {
-  width: 200px;
 }
 .block-services .block-services_display .installations .text-installations p {
   margin-top: 15px;
-  width: 200px;
+  line-height: 20px;
+  font-size: 17px;
 }
 
 footer {
@@ -454,7 +533,6 @@ footer .footer-nav .logo-footer h2 {
   font-size: 30px;
   font-weight: bold;
 }
-
 footer .footer-nav h2 {
   font-weight: 200;
 }
@@ -478,9 +556,21 @@ footer nav ul a:hover {
   transform: scale(1.1);
   color: #e6e6e6;
 }
+footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 footer .footer-bottom p {
   margin-left: 9%;
   padding: 10px;
   font-weight: 200;
   font-size: 12px;
+}
+footer .footer-bottom a {
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-left: 5%;
 }/*# sourceMappingURL=style.css.map */

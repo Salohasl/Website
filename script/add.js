@@ -12,7 +12,7 @@ const btnUp = {
         // определяем величину прокрутки
         const scrollY = window.scrollY || document.documentElement.scrollTop;
         // если страница прокручена больше чем на 400px, то  кнопка видна, иначе скрыть
-        scrollY > 400 ? this.show() : this.hide();
+        scrollY > 500 ? this.show() : this.hide();
       });
       document.querySelector('.btn-up').onclick = () => {
         window.scrollTo({
@@ -50,3 +50,5 @@ const btnUp = {
       prevEl: ".swiper-button-prev",
     },
   });
+
+//Для добавления оглавления в textaread

@@ -90,10 +90,66 @@
     }
   }
   @media only screen and (max-width:570px){
-  
+    .menuBtn{
+      margin-left: 70%;
+    }
+    .header-content .header-content_text {
+      text-align: center;
+    }
+    main .main-block_up{
+      position: static;
+      margin-top: 0px;
+    }
+    main .main-block_about{
+      text-align: center;
+    }
+    main .main-block_about .main-block_about-icon{
+      justify-content: center;
+    }
+    .block-testimonials{
+      text-align: center;
+    }
+    .block-testimonials .block-testimonials_left-text{
+      margin-left: 0px;
+    }
+    .block-testimonials .block-testimonials_right-text{
+      margin-left: 0px;
+    }
+    .block-connect .block-connect-icon{
+      margin-top: 30px;
+    }
+   
+    .block-connect .block-connect-icon button{
+      padding-left: 20px;
+      margin-top: 30px;
+    }
+    .block-work .block-work_header{
+      width: 98%;
+    }
+    .container{
+      width: 100%;
+      margin-left: 0px;
+    }
+    .block-services{
+      text-align: center;
+    }
+    
+    footer nav ul a {
+      padding-left: 10px;
+    }
+    textarea{
+      width: 90%;
+    }
+    
   }
   @media only screen and (max-width:400px){
-   
+    footer nav ul{
+      flex-wrap: wrap;
+    }
+    footer nav ul a {
+      padding: 5px;
+      font-size: 12px;
+    }
   }
   @media only screen and (max-width:320px){
    

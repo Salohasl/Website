@@ -1,9 +1,8 @@
 .container{
   background-color: white;
-  padding-top: 50px;
   border-radius: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: -200px;
   display: flex;
   align-items: center;
@@ -20,15 +19,19 @@
   margin-right: 50px;
   margin-top: 50px;
   line-height: 50px;
-  height: 100vh;
   text-align: center;
 }
 .form-data h2{
   font-weight: 300;
+  font-size: 30px;
 }
 .location{
   line-height: 40px;
 }
+.location h4{
+ font-size: 25px;
+}
+
 .contactUs{
   margin-top: 50px;
 }
@@ -60,11 +63,13 @@
   color: #454545;
   font-size: 30px;
   margin-top: 20px;
+  text-align: center;
 }
 .form-container p{
   color: #454545;
   font-size: 15px;
   margin-top: 20px;
+  text-align: center;
 }
 .form-group{
   display: flex;
@@ -83,6 +88,7 @@ label a{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 input{
   border: none;

@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    color: #3957FF;
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    color: #3957FF;
+    line-height: 25px;
+    font-weight: 700;
+}
+ul{
+    font-size: 20px;
+    line-height: 25px;
+}
